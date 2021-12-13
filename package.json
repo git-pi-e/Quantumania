@@ -4,6 +4,7 @@
   "description": "Quantum Games",
   "main": "index.js",
   "scripts": {
+    "new": "sh ./scripts/new.sh",
     "dev": "node ./server"
   },
   "repository": {

@@ -1,3 +1,4 @@
+HTML=$(cat <<-END
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,19 +14,35 @@
     <link rel="stylesheet" href="css/lg.css" media="(max-width: 991px)" />
     <link rel="stylesheet" href="css/ex.css" media="(max-width: 1200px)" />
 
-    <title>T33</title>
+    <title>New Game</title>
 
     <script defer src="../assets/global.js"></script>
     <script defer src="js/index.js"></script>
 </head>
 
 <body>
-    This is T33
-
-    <div className="flex flex-col items-center justify-center">
-        <canvas id="myThreeCanvas" />
-    </div>
+    This is New Game
 
 </body>
 
 </html>
+END
+);
+
+echo "Enter Game Full Name: ";
+read fullname;
+
+echo "Enter URL Endpoint: ";
+read endpoint;
+
+
+echo "Initialising Directory...";
+mkdir $endpoint;
+cd $endpoint;
+
+mkdir assets js css lib;
+
+touch ./js/index.js ./css/index.css ./index.html;
+
+echo $HTML > ./index.html;
+echo "Game is Ready!";
