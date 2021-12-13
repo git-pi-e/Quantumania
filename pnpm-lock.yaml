@@ -1,0 +1,13 @@
+lockfileVersion: 5.3
+
+specifiers:
+  three: ^0.135.0
+
+dependencies:
+  three: 0.135.0
+
+packages:
+
+  /three/0.135.0:
+    resolution: {integrity: sha512-kuEpuuxRzLv0MDsXai9huCxOSQPZ4vje6y0gn80SRmQvgz6/+rI0NAvCRAw56zYaWKMGMfqKWsxF9Qa2Z9xymQ==}
+    dev: false
