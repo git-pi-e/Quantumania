@@ -4,7 +4,7 @@
   "description": "Quantum Games",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node ./server"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/plutoniumm/Quantumania#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "three": "^0.135.0"
   }
 }
