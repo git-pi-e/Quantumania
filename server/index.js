@@ -4,6 +4,7 @@ const path = require( 'path' );
 
 // Primitives
 const PORT = 3000 || process.env.PORT;
+const config = require( 'config.json' );
 const default_route = '../T33';
 
 // Basics
@@ -12,8 +13,9 @@ const app = express();
 // CONFIG
 app.use( '/', express.static( path.join( __dirname, default_route ) ) );
 
-app.use( '/T33', express.static( path.join( __dirname, '../T33' ) ) );
-app.use( '/Quandris', express.static( path.join( __dirname, '../Quandris' ) ) );
+config.endpoints.forEach( ( endpoint ) => {
+    app.use( endpoint.url, express.static( path.join( __dirname, endpoint.folder ) ) );
+} );
 
 // ROUTES
 app.get( '/', ( req, res ) => {
