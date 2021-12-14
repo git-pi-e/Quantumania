@@ -2,6 +2,7 @@
   "name": "quantumania",
   "version": "0.0.1",
   "description": "Quantum Games",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "new": "sh ./scripts/new.sh",
@@ -22,7 +23,10 @@
   },
   "homepage": "https://github.com/plutoniumm/Quantumania#readme",
   "dependencies": {
-    "express": "^4.17.1",
     "three": "^0.135.0"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^3.1.0"
   }
 }
