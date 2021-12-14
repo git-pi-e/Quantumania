@@ -4,7 +4,7 @@ const path = require( 'path' );
 
 // Primitives
 const PORT = 3000 || process.env.PORT;
-const config = require( 'config.json' );
+const config = require( './config' );
 const default_route = '../T33';
 
 // Basics

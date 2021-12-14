@@ -1,6 +1,7 @@
-import * as THREE from "three";
-import SceneInit from "../lib/SceneInit";
-import TicTacToeCube from "../lib/TicTacToeCube";
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.module.js';
+
+import SceneInit from "../lib/SceneInit.js";
+import TicTacToeCube from "../lib/TicTacToeCube.js";
 
 const canvasId = "myThreeCanvas";
 
@@ -35,6 +36,7 @@ const onMouseMove = ( event ) => {
 };
 
 const onMouseDown = ( event ) => {
+    console.log( 1 );
     mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
     mouse.y = -( event.clientY / window.innerHeight ) * 2 + 1;
     raycaster.setFromCamera( mouse, test.camera );
@@ -54,15 +56,9 @@ const onMouseDown = ( event ) => {
 };
 
 const scaleUp = ( obj ) => {
-    if ( obj.scale.x < 1 ) {
-        obj.scale.x += 0.04;
-    }
-    if ( obj.scale.y < 1 ) {
-        obj.scale.y += 0.04;
-    }
-    if ( obj.scale.z < 1 ) {
-        obj.scale.z += 0.04;
-    }
+    if ( obj.scale.x < 1 ) { obj.scale.x += 0.04; }
+    if ( obj.scale.y < 1 ) { obj.scale.y += 0.04; }
+    if ( obj.scale.z < 1 ) { obj.scale.z += 0.04; }
 };
 
 const animate = () => {
@@ -71,8 +67,7 @@ const animate = () => {
     game.winStrikes.children.forEach( ( strike ) => scaleUp( strike ) );
     requestAnimationFrame( animate );
 };
-
 animate();
 
-window.addEventListener( "mousedown", onMouseDown, false );
-window.addEventListener( "mousemove", onMouseMove, false );
+window.addEventListener( "click", onMouseDown );
+window.addEventListener( "mousemove", onMouseMove );

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <rect fill="url(#a)" rx="10" x="0" y="0" width="180" height="180" />
+  <g fill="#fff" font-family="'Courier New', monospace">
+    <text x="42" y="125" font-size="160">Q</text>
+  </g>
+   <defs>
+    <linearGradient id="a" x1="-10%" y1="-10%" x2="80%" y2="80%" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F59"/>
+      <stop offset="1" stop-color="#70Fc"/>
+    </linearGradient>
+  </defs>
+</svg>

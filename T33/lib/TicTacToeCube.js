@@ -1,4 +1,4 @@
-import * as THREE from "three";
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.module.js';
 
 export default class TicTacToeCube {
   constructor () {
@@ -431,8 +431,8 @@ export default class TicTacToeCube {
   }
 
   _getYOffset ( y ) {
-    if ( x === 0 ) return 24;
-    if ( x === 1 ) return 0;
+    if ( y === 0 ) return 24;
+    if ( y === 1 ) return 0;
     return -24;
   }
 
