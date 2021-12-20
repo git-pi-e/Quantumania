@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 305 305">
+  <g fill="#a0f" stroke="#a0f" stroke-width="1">
+    <path d="M3 3h100v100H3V3z"/>
+    <path d="M203 3h100v100H203V3z"/>
+    <path d="M103 3h100v100H103V3z"/>
+    <path d="M103 103h100v100H103V103z"/>
+  </g>
+  <rect x="2.4" y="103.5" width="100" height="100" fill="#2af" />
+</svg>

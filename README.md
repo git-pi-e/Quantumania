@@ -22,3 +22,6 @@ Quandry in Tetris - Quantum Tetris
 - QPacMan
 - QSnake?
 - QPong??
+
+# TODOs
+- Safari Mobile onClick bug &rarr; https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
