@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
-  <rect fill="url(#a)" rx="10" x="0" y="0" width="180" height="180" />
-  <g fill="#fff" font-family="Helvetica">
-    <text x="10" y="160" font-size="120">T</text>
+  <rect fill="url(#a)" rx="90" x="0" y="0" width="180" height="180" />
+  <g fill="#fff" transform="translate(5,-2) scale(0.9)" font-family="Helvetica">
+    <text transform="rotate(45)" x="82" y="87" font-size="120">&#x2715;</text>
     <text x="80" y="110" font-size="90">3</text>
     <text x="130" y="70" font-size="60">3</text>
   </g>
