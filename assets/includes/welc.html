@@ -1,0 +1,61 @@
+<div id="welcome" class="f tx-j">
+    <h1>Hi Kids!</h1>
+    <p>Welcome to Quantumania! <br>
+    We'll make 5 Quantum Games. Initially with only Q-like Logic and Q-PRG. Later if feasible on IBM-Q</p>
+
+    <ul>
+        <h4>Basic Direction</h4>
+        <li>
+            <h5>January End</h5>
+            <p>Basic Layout & Quantum Logic for TCC, Quandris & Hack-Man</p>
+            <p>Decide on 2 more games</p>
+        </li>
+        <li>
+            <h5>February End</h5>
+            <p>End :)</p>
+        </li>
+    </ul>
+
+    <button id="close" onclick="f('#welc').remove()">Lessgoo!</button>
+</div>
+
+<style>
+    #close{
+        width: 100px;
+        padding: 10px 20px;
+        margin: 10px 0;
+        border: 3px solid #fff;
+        outline: 0;
+        background: #0000;
+        color: #fff;
+        transition: background 0.1s ease;
+    }
+    #close:hover{
+        cursor: pointer;
+        background: #fff2;
+    }
+    #welcome {
+        backdrop-filter: blur(8px);
+        -ms-backdrop-filter: blur(8px);
+        -moz-backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        font-size: 1.25em;
+        padding: 10px;
+        background: #000a;
+        top: 0;
+        font-weight: 100px;
+
+        width: calc(100% - 20px);
+        height: calc(100vh - 20px);
+        position: fixed;
+        overflow: scroll;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #welcome p {
+        max-width: 800px;
+    }
+
+</style>
