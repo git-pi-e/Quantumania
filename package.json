@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "new": "sh ./scripts/new.sh",
-    "dev": "node ./server"
+    "dev": "node ./server",
+    "git": "sh ./scripts/commit.sh"
   },
   "repository": {
     "type": "git",

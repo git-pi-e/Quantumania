@@ -1,6 +1,8 @@
 # Quantumania
 Quantum Games :)
 
+<img width="200px" src="./assets/icons/qmania.svg" align="center" />
+
 ## Commands
 Run Dev Server
 ```bash
@@ -12,6 +14,11 @@ Create New Game
 $ npm run new
 ```
 
+Commit
+```bash
+$ npm run git
+```
+
 ## |T<sup>3<sup>3</sup></sup>&rang;
 TicTacToe Cubed - Quantum TTT in 3D
 
@@ -21,7 +28,7 @@ Quandry in Tetris - Quantum Tetris
 ## Rest
 - QPacMan
 - QSnake?
-- QPong??
+- QPong??????
 
 # TODOs
 - Safari Mobile onClick bug &rarr; https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
