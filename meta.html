@@ -13,6 +13,9 @@
 <body class="tx-j">
     <section>
         <h1>T<sup>3<sup>3</sup></sup></h1>
+
+        <div progress="1100000"></div>
+
         <p>
             <iframe src="https://www.youtube-nocookie.com/embed/u1Ds422Qrdw?modestbranding=1&showinfo=0&rel=0&cc_load_policy=1&iv_load_policy=3&color=white" width="560" height="315" frameborder="0"></iframe>
             <a href="https://en.wikipedia.org/wiki/Quantum_tic-tac-toe">QTTT Wikipedia</a>
@@ -22,7 +25,10 @@
     </section>
 
     <section>
-        <h1>Quandrys</h1>
+        <h1>Quandris</h1>
+
+        <div progress="1100000"></div>
+
         <p>
             <a href="https://github.com/dartmouth-cs98/Quantum-Tetris">Inspiration</a>
             <a href="http://quantumtetris.com">Inspiration ki Website</a>
@@ -36,6 +42,9 @@
 
     <section>
         <h1>PaqMan</h1>
+
+        <div progress="0000000"></div>
+
         <p>
             <a href="https://medium.com/mit-6-s089-intro-to-quantum-computing/quhacman-a-quantum-two-player-pacman-game-5aca10b633eb">QPacMan Description | Medium</a>
         </p>
@@ -45,12 +54,43 @@
 <style>
     section {
         padding: 10px 20px;
+        background: #333;
+        border-radius: 10px;
+        margin: 10px;
     }
     a,a:visited {
         display:block;
         color: #2af;
     }
 </style>
+
+<script>
+    window.onload=()=>{
+        const progessBar=(div, pg)=>{
+            const labeler = (label, state)=>`<label><input type="checkbox" ${state}>${label}<br/></label>`;
+
+            const stages = [
+                'Basic Layout',
+                'Algorithm: Operational', 'Algorithm: Logical','Algorithm: Quantum',
+                'Secondary Styling', 'Compatibility',
+                'Optimisation'
+            ];
+
+            stages.forEach((label, i)=>{
+                const checked = +pg.charAt(i)===1?'checked':'';
+
+                div.innerHTML += labeler(label, checked);
+            });
+
+            return 0;
+        };
+
+        document.querySelectorAll('[progress]').forEach(div=>{
+            const pg = div.getAttribute('progress');
+            progessBar(div, pg);
+        });
+    }
+</script>
 <script src="./assets/lib/supports.js"></script>
 
 </html>

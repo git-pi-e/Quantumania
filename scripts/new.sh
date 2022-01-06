@@ -8,6 +8,7 @@ HTML=$(cat <<-END
 
     <link rel="stylesheet" href="../assets/global.css" />
 
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/sm.css" media="(max-width: 300px)" />
     <link rel="stylesheet" href="css/md.css" media="(max-width: 600px)" />
     <link rel="stylesheet" href="css/lg.css" media="(max-width: 991px)" />
