@@ -3,10 +3,6 @@ lockfileVersion: 5.3
 specifiers:
   express: ^4.17.1
   node-fetch: ^3.1.0
-  three: ^0.135.0
-
-dependencies:
-  three: 0.135.0
 
 devDependencies:
   express: 4.17.1
@@ -364,10 +360,6 @@ packages:
     resolution: {integrity: sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=}
     engines: {node: '>= 0.6'}
     dev: true
-
-  /three/0.135.0:
-    resolution: {integrity: sha512-kuEpuuxRzLv0MDsXai9huCxOSQPZ4vje6y0gn80SRmQvgz6/+rI0NAvCRAw56zYaWKMGMfqKWsxF9Qa2Z9xymQ==}
-    dev: false
 
   /toidentifier/1.0.0:
     resolution: {integrity: sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==}

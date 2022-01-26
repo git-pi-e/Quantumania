@@ -1,0 +1,10 @@
+{
+  "name": "t33",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
