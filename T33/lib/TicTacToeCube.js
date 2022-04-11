@@ -16,6 +16,7 @@ export default class TicTacToeCube {
     this.board.add( this.winStrikes );
 
     this.currentPlayer = "sphere";
+    //TODO: expand this board to size 81 from 27
     this.boardCopy = [
       [
         // z = 24
@@ -257,6 +258,7 @@ export default class TicTacToeCube {
     );
   }
 
+  //TODO:Expand from 27 to 81 | Partitions for size=3 will be almost transparent; those separating them will be visible(thicc)
   _createBoard () {
     // add vertical lines
     const verticalDimensions = { x: 4, y: 64, z: 4 };
@@ -469,7 +471,21 @@ export default class TicTacToeCube {
       this.currentPlayer = "sphere";
     }
   }
-
+  // // TODO: Make spooky sphere -- radius=2
+  // spooky sphere -- radius=2
+  _spookySphere ( offset ) {
+    const sphereGeometry = new THREE.SphereGeometry( 2 );
+    const sphereMaterial = new THREE.MeshNormalMaterial();
+    const sphere = new THREE.Mesh( sphereGeometry, sphereMaterial );
+    sphere.position.x = offset.x;
+    sphere.position.y = offset.y;
+    sphere.position.z = offset.z;
+    sphere.scale.x = 0;
+    sphere.scale.y = 0;
+    sphere.scale.z = 0;
+    return sphere;
+  }
+  // normal sphere -- radius=6
   _sphere ( offset ) {
     const sphereGeometry = new THREE.SphereGeometry( 6 );
     const sphereMaterial = new THREE.MeshNormalMaterial();
@@ -483,6 +499,36 @@ export default class TicTacToeCube {
     return sphere;
   }
 
+  // // TODO: Make spooky asterisk -- dimension of boxes (2,7,2)
+  // spooky asterisk -- dimension of boxes (2,7,2)
+  _spookyAsterisk(offset) {
+    const asteriskGroup = new THREE.Group();
+    const asteriskGeometry = new THREE.BoxGeometry( 1,3.5,1 );
+    const asteriskMaterial = new THREE.MeshNormalMaterial();
+    const a1 = new THREE.Mesh( asteriskGeometry, asteriskMaterial );
+    const a2 = new THREE.Mesh( asteriskGeometry, asteriskMaterial );
+    const a3 = new THREE.Mesh( asteriskGeometry, asteriskMaterial );
+    const a4 = new THREE.Mesh( asteriskGeometry, asteriskMaterial );
+    const a5 = new THREE.Mesh( asteriskGeometry, asteriskMaterial );
+
+    a2.rotation.z = Math.PI / 3;
+    a2.rotation.y = Math.PI / 4;
+    a3.rotation.z = -Math.PI / 3;
+    a3.rotation.y = -Math.PI / 4;
+    a4.rotation.z = -Math.PI / 3;
+    a4.rotation.y = Math.PI / 4;
+    a5.rotation.z = Math.PI / 3;
+    a5.rotation.y = -Math.PI / 4;
+    asteriskGroup.add( a1, a2, a3, a4, a5 );
+    asteriskGroup.position.x = offset.x;
+    asteriskGroup.position.y = offset.y;
+    asteriskGroup.position.z = offset.z;
+    asteriskGroup.scale.x = 0;
+    asteriskGroup.scale.y = 0;
+    asteriskGroup.scale.z = 0;
+    return asteriskGroup;
+  }
+  // normal asterisk -- dimension of boxes (4,14,4)
   _asterisk ( offset ) {
     const asteriskGroup = new THREE.Group();
     const asteriskGeometry = new THREE.BoxGeometry( 4, 14, 4 );
@@ -492,6 +538,7 @@ export default class TicTacToeCube {
     const a3 = new THREE.Mesh( asteriskGeometry, asteriskMaterial );
     const a4 = new THREE.Mesh( asteriskGeometry, asteriskMaterial );
     const a5 = new THREE.Mesh( asteriskGeometry, asteriskMaterial );
+
     a2.rotation.z = Math.PI / 3;
     a2.rotation.y = Math.PI / 4;
     a3.rotation.z = -Math.PI / 3;
