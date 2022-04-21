@@ -4,6 +4,11 @@
             "name": "T33",
             "url": "/T33",
             "folder": "../T33"
+        },
+        {
+            "name": "PaQman",
+            "url": "/Paqman",
+            "folder": "../Paqman/dist"
         }
     ]
 }
