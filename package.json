@@ -25,6 +25,6 @@
   "homepage": "https://github.com/plutoniumm/Quantumania#readme",
   "devDependencies": {
     "express": "4.17.3",
-    "node-fetch": "3.2.0"
+    "node-fetch": "3.2.5"
   }
 }
