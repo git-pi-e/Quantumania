@@ -25,8 +25,10 @@ TicTacToe Cubed - Quantum TTT in 3D
 ## Quandris
 Quandry in Tetris - Quantum Tetris
 
+## PaQman
+PaQman - Quantum Pacman
+
 ## Rest
-- QPacMan
 - QSnake?
 - QPong??????
 
