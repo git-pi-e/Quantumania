@@ -1,8 +1,9 @@
-# Quantumania
-Quantum Games :)
+<div align="center">
+<img width="200px" src="./assets/icons/qmania.svg" />
+<h1>Quantumania</h1>
+</div>
 
-<img width="200px" src="./assets/icons/qmania.svg" align="center" />
-
+Quantumania Games :)
 ## Commands
 Run Dev Server
 ```bash
@@ -19,13 +20,26 @@ Commit
 $ npm run git
 ```
 
-## |T<sup>3<sup>3</sup></sup>&rang;
+<div align="center">
+    <h1>
+        |T<sup>3<sup>3</sup></sup>&rang;
+    </h1>
+</div>
+
 TicTacToe Cubed - Quantum TTT in 3D
 
-## Quandris
+<div align="center">
+    <h1>
+        Quandris
+    </h1>
+</div>
 Quandry in Tetris - Quantum Tetris
 
-## PaQman
+<div align="center">
+    <h1>
+        PaQman
+    </h1>
+</div>
 PaQman - Quantum Pacman
 
 ## Rest
