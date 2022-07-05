@@ -1,8 +1,8 @@
-import { DIRECTIONS, OBJECT_TYPE } from '../setup';
-import { randomMovement } from './ghostmoves';
+import { DIRECTIONS, OBJECT_TYPE } from '../setup.js';
+import { randomMovement } from './ghostmoves.js';
 
 class Ghost {
-  constructor(speed = 5, startPos, movement, name) {
+  constructor ( speed = 5, startPos, movement, name ) {
     this.name = name;
     this.movement = movement;
     this.startPos = startPos;
@@ -14,15 +14,15 @@ class Ghost {
     this.rotation = false;
   }
 
-  shouldMove() {
-    if (this.timer === this.speed) {
+  shouldMove () {
+    if ( this.timer === this.speed ) {
       this.timer = 0;
       return true;
     }
     this.timer++;
   }
 
-  getNextMove(objectExist) {
+  getNextMove ( objectExist ) {
     // Call move algoritm here
     const { nextMovePos, direction } = this.movement(
       this.pos,
@@ -32,16 +32,16 @@ class Ghost {
     return { nextMovePos, direction };
   }
 
-  makeMove() {
-    const classesToRemove = [OBJECT_TYPE.GHOST, OBJECT_TYPE.SCARED, this.name];
-    let classesToAdd = [OBJECT_TYPE.GHOST, this.name];
+  makeMove () {
+    const classesToRemove = [ OBJECT_TYPE.GHOST, OBJECT_TYPE.SCARED, this.name ];
+    let classesToAdd = [ OBJECT_TYPE.GHOST, this.name ];
 
-    if (this.isScared) classesToAdd = [...classesToAdd, OBJECT_TYPE.SCARED];
+    if ( this.isScared ) classesToAdd = [ ...classesToAdd, OBJECT_TYPE.SCARED ];
 
     return { classesToRemove, classesToAdd };
   }
 
-  setNewPos(nextMovePos, direction) {
+  setNewPos ( nextMovePos, direction ) {
     this.pos = nextMovePos;
     this.dir = direction;
   }

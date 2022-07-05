@@ -29,10 +29,10 @@ HTML=$(cat <<-END
 END
 );
 
-echo "Enter Game Full Name: ";
+echo "Enter Game Full Name: (eg. Quandris)";
 read fullname;
 
-echo "Enter URL Endpoint: ";
+echo "Enter URL Endpoint: (eg. quandris)";
 read endpoint;
 
 
@@ -40,9 +40,10 @@ echo "Initialising Directory...";
 mkdir $endpoint;
 cd $endpoint;
 
-mkdir assets js css lib;
+mkdir assets lib;
+mkdir assets/css;
 
-touch ./js/index.js ./css/index.css ./index.html;
+touch ./lib/index.js ./assets/css/index.css ./index.html;
 
 echo $HTML > ./index.html;
 echo "Game is Ready!";

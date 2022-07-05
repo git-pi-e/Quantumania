@@ -17,10 +17,16 @@
         <div progress="1100000"></div>
 
         <p>
-            <iframe src="https://www.youtube-nocookie.com/embed/u1Ds422Qrdw?modestbranding=1&showinfo=0&rel=0&cc_load_policy=1&iv_load_policy=3&color=white" width="560" height="315" frameborder="0"></iframe>
+            <iframe
+                src="https://www.youtube-nocookie.com/embed/u1Ds422Qrdw?modestbranding=1&showinfo=0&rel=0&cc_load_policy=1&iv_load_policy=3&color=white"
+                width="560" height="315" frameborder="0"></iframe>
             <a href="https://en.wikipedia.org/wiki/Quantum_tic-tac-toe">QTTT Wikipedia</a>
-            <a href="https://www.researchgate.net/publication/338113536_Quantum_Tic-Tac-Toe_A_Hybrid_of_Quantum_and_Classical_Computing">Hybrid Style Implementation </a>
-            <a href="https://www.researchgate.net/publication/46461544_Strategic_Insights_From_Playing_the_Quantum_Tic-Tac-Toe">Playing Strategies</a>
+            <a
+                href="https://www.researchgate.net/publication/338113536_Quantum_Tic-Tac-Toe_A_Hybrid_of_Quantum_and_Classical_Computing">Hybrid
+                Style Implementation </a>
+            <a
+                href="https://www.researchgate.net/publication/46461544_Strategic_Insights_From_Playing_the_Quantum_Tic-Tac-Toe">Playing
+                Strategies</a>
         </p>
     </section>
 
@@ -36,17 +42,20 @@
         </p>
 
         <p>
-            <a href="https://github.com/olivierbrcknr/quantum-tetris/">Kuch to hai yeh bhi apparently IBM ka implementation hai</a>
+            <a href="https://github.com/olivierbrcknr/quantum-tetris/">Kuch to hai yeh bhi apparently IBM ka
+                implementation hai</a>
         </p>
     </section>
 
     <section>
         <h1>PaqMan</h1>
 
-        <div progress="0000000"></div>
+        <div progress="1110000"></div>
 
         <p>
-            <a href="https://medium.com/mit-6-s089-intro-to-quantum-computing/quhacman-a-quantum-two-player-pacman-game-5aca10b633eb">QPacMan Description | Medium</a>
+            <a
+                href="https://medium.com/mit-6-s089-intro-to-quantum-computing/quhacman-a-quantum-two-player-pacman-game-5aca10b633eb">QPacMan
+                Description | Medium</a>
         </p>
     </section>
 
@@ -58,37 +67,38 @@
         border-radius: 10px;
         margin: 10px;
     }
-    a,a:visited {
-        display:block;
+
+    a,
+    a:visited {
+        display: block;
         color: #2af;
     }
 </style>
 
 <script>
-    window.onload=()=>{
-        const progessBar=(div, pg)=>{
-            const labeler = (label, state)=>`<label><input type="checkbox" ${state}>${label}<br/></label>`;
+    window.onload = () => {
+        const progessBar = ( div, pg ) => {
+            const labeler = ( label, state ) => `<label><input type="checkbox" ${ state }>${ label }<br/></label>`;
 
             const stages = [
                 'Basic Layout',
-                'Algorithm: Operational', 'Algorithm: Logical','Algorithm: Quantum',
+                'Algorithm: Operational', 'Algorithm: Logical', 'Algorithm: Quantum',
                 'Secondary Styling', 'Compatibility',
                 'Optimisation'
             ];
 
-            stages.forEach((label, i)=>{
-                const checked = +pg.charAt(i)===1?'checked':'';
+            stages.forEach( ( label, i ) => {
+                const checked = +pg.charAt( i ) === 1 ? 'checked' : '';
 
-                div.innerHTML += labeler(label, checked);
-            });
+                div.innerHTML += labeler( label, checked );
+            } );
 
             return 0;
         };
 
-        document.querySelectorAll('[progress]').forEach(div=>{
-            const pg = div.getAttribute('progress');
-            progessBar(div, pg);
-        });
+        document
+            .querySelectorAll( '[progress]' )
+            .forEach( div => progessBar( div, div.getAttribute( 'progress' ) ) );
     }
 </script>
 <script src="./assets/lib/supports.js"></script>

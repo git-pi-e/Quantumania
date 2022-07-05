@@ -19,10 +19,6 @@
   ],
   "author": "Plutoniumm",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/plutoniumm/Quantumania/issues"
-  },
-  "homepage": "https://github.com/plutoniumm/Quantumania#readme",
   "devDependencies": {
     "express": "4.17.3",
     "node-fetch": "3.2.6"
