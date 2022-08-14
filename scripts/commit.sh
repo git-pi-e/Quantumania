@@ -1,7 +1,8 @@
 echo "Add a message?";
 
-read message;
+read msg;
 
 git add .;
-git commit -m "$message";
+git commit -m "$msg";
+echo "Commiting with: $msg"
 git push;
