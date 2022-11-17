@@ -6,7 +6,7 @@
   "scripts": {
     "build:t33": "cd T33 && wasm-pack build && ../node_modules/.bin/webpack",
     "new": "sh ./scripts/new.sh",
-    "dev": "node ./server",
+    "dev": "node ./index.js",
     "git": "sh ./scripts/commit.sh"
   },
   "repository": {
