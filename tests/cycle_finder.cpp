@@ -82,7 +82,7 @@ void updateTree(int update_tree_id, int tree_id_to_update) {   //A function that
         }
     }
 }
-bool insertEdgeAndCheck(int a, int b) {  
+bool insertEdgeAndCheck(int a, int b) {
     adjMat[a][b] = 1; //make the edge
     adjMat[b][a] = 1; //make the edge
     if (std::get<0>(nodemap[a]) == 0 and std::get<0>(nodemap[b]) == 0) {
