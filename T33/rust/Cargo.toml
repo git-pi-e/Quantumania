@@ -1,7 +1,6 @@
 [package]
 name = "t33_engine"
 version = "0.1.0"
-authors = ["Team Dreadnought"]
 edition = "2018"
 
 [lib]

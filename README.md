@@ -4,33 +4,12 @@
 </div>
 
 Quantumania Games :)
-## Commands
-Run Dev Server
-```bash
-$ npm run dev
-```
 
-Create New Game
-```bash
-$ npm run new
-```
-
-Commit
-```bash
-$ npm run git
-```
-
-<div align="center">
-<h1>|T<sup>3<sup>3</sup></sup>&rang;</h1>
-</div>
-
+## |T<sup>3<sup>3</sup></sup>&rang;
 TicTacToe Cubed - Quantum TTT in 3D
 
-<div align="center">
-<h1>Quandris</h1>
-</div>
-
+## Quandris
 Tetris with Quantum Blocks?
 
-# TODOs
+### TODOs
 - Safari Mobile onClick bug &rarr; https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event

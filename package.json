@@ -3,12 +3,7 @@
   "version": "0.1.0",
   "description": "Quantum Games",
   "type": "module",
-  "scripts": {
-    "build:t33": "cd T33 && wasm-pack build && ../node_modules/.bin/webpack",
-    "new": "sh ./scripts/new.sh",
-    "dev": "node ./index.js",
-    "git": "sh ./scripts/commit.sh"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/plutoniumm/Quantumania.git"
